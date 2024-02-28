@@ -1,5 +1,8 @@
 /home/zhuyi/桌面/WorkSpace/RPC/build/CMakeFiles/edit_cache.dir
 /home/zhuyi/桌面/WorkSpace/RPC/build/CMakeFiles/rebuild_cache.dir
+/home/zhuyi/桌面/WorkSpace/RPC/build/src/CMakeFiles/mprpc.dir
+/home/zhuyi/桌面/WorkSpace/RPC/build/src/CMakeFiles/edit_cache.dir
+/home/zhuyi/桌面/WorkSpace/RPC/build/src/CMakeFiles/rebuild_cache.dir
 /home/zhuyi/桌面/WorkSpace/RPC/build/example/CMakeFiles/edit_cache.dir
 /home/zhuyi/桌面/WorkSpace/RPC/build/example/CMakeFiles/rebuild_cache.dir
 /home/zhuyi/桌面/WorkSpace/RPC/build/example/callee/CMakeFiles/provider.dir

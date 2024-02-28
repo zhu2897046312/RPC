@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zhuyi/桌面/WorkSpace/RPC/src -I/home/zhuyi/桌面/WorkSpace/RPC/example
+CXX_INCLUDES = -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example
 
 CXX_FLAGS = -g
 

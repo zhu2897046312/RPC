@@ -1,7 +1,9 @@
-#include <iostream>
+
 #include <string>
 
 #include "user.pb.h"
+#include "mprpcapplication.h"
+#include "rpcprovider.h"
 
 class UserService : public fixbug::UserServiceRpc   //rpc服务提供者
 {
@@ -37,6 +39,18 @@ public:
     }
 };
 
-int main(){
+int main(int argc,char **argv){
+
+    // 框架初始化操作
+    fst::MprpcApplication::Init(argc,argv);
+
+    //把Userervice对象发布到rpc节点上
+    fst::RpcProvider provider;
+    provider.NotifyService(new UserService());
+
+    //启动一个rpc服务发布节点
+    provider.Run();
+
+
     return 0;
 }
