@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/src -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -o CMakeFiles/provider.dir/userservice.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc",
+  "file": "/home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc"
+},
+{
+  "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/src -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/example/user.pb.cc",
+  "file": "/home/zhuyi/桌面/WorkSpace/RPC/example/user.pb.cc"
+}
+]
