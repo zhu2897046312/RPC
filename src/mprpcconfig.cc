@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
-
+#include <algorithm>
 
 namespace fst
 {
@@ -25,40 +25,30 @@ void MprcpConfig::LoadConfigFile(const char* config_file){
     while(!feof(pf)){
         char buf[512] = {0};
         fgets(buf,512,pf);
-
-        //去掉字符串前面的空格
         std::string src_buf(buf);
-        int index = src_buf.find_first_not_of(' ');
-        if(index != -1){
-            //前面有
-            src_buf = src_buf.substr(index,src_buf.size()-index);
-        }
-        //去掉字符串后面的空格
-        index = src_buf.find_last_not_of(' ');
-        if (-1 != index) {
-            //后面有
-            src_buf = src_buf.substr(0,index + 1);
-        }
 
         // #
         if('#' == src_buf[0] || src_buf.empty()) 
             continue;
-
         // 解析配置项
 
+        //去掉字符串前后的空格
+        trim(src_buf);
 
-        index  = src_buf.find('=');
-        if (-1 == index) 
-            continue;
+        int index = src_buf.find("=");
+        if(-1 == index) continue;
+
         std::string key;
         std::string value;
         key = src_buf.substr(0,index);
-        value = src_buf.substr(index + 1,src_buf.size() - index);
-        //去掉 \n
-        index = value.find('\n');
-        value = value.substr(0,index);
-        m_configMap.insert(std::make_pair(key, value));
+        trim(key);
+        int end_index = src_buf.find('\n',index);
+        value = src_buf.substr(index + 1,  end_index - index - 1);
+        trim(value);
+        
+        m_configMap.insert(std::make_pair(key, value)); 
     }
+
 }
 
 
@@ -70,6 +60,20 @@ std::string MprcpConfig::Load(const std::string& key){
         return "";
     
     return it->second;
+}
+
+void MprcpConfig::trim(std::string& str) {
+    int index = str.find_first_not_of(' ');
+    if(index != -1){
+            //前面有
+        str = str.substr(index,str.size()-index);
+    }
+    //去掉字符串后面的空格
+    index = str.find_last_not_of(' ');
+    if (-1 != index) {
+        //后面有
+        str = str.substr(0,index + 1);
+    }
 }
 
 

@@ -9,6 +9,7 @@ class MprpcApplication
 public:
     static void Init(int argc,char **argv);
     static MprpcApplication& GetInstance();
+    static MprcpConfig& GetConfig();
 private:
     static MprcpConfig m_config;
     static bool is_init;

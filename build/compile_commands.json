@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/src",
-  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -fPIC -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/mprpcapplication.cc",
+  "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/mprpcapplication.cc",
   "file": "/home/zhuyi/桌面/WorkSpace/RPC/src/mprpcapplication.cc"
 },
 {
   "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/src",
-  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -fPIC -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/mprpcconfig.cc",
+  "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/mprpcconfig.cc",
   "file": "/home/zhuyi/桌面/WorkSpace/RPC/src/mprpcconfig.cc"
 },
 {
   "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/src",
-  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -fPIC -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/rpcprovider.cc",
+  "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -I/home/zhuyi/桌面/WorkSpace/RPC/example -g -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/rpcprovider.cc",
   "file": "/home/zhuyi/桌面/WorkSpace/RPC/src/rpcprovider.cc"
 },
 {
