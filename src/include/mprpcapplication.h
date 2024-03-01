@@ -1,6 +1,10 @@
 #pragma once
 
 #include "mprpcconfig.h"
+#include "mprpcchannel.h"
+#include "mprpccontroller.h"
+#include "rpcprovider.h"
+
 namespace fst {
 
 //使用单例模式 负责框架的初始化操作

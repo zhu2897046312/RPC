@@ -359,6 +359,8 @@ src/CMakeFiles/mprpc.dir/rpcprovider.cc.o: \
  /usr/local/include/muduo/net/TimerId.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcapplication.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcconfig.h \
+ /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcchannel.h \
+ /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpccontroller.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/rpcheader.pb.h \
  /usr/include/google/protobuf/generated_message_table_driven.h \
  /usr/include/google/protobuf/map.h \

@@ -1,4 +1,5 @@
 
+#include <cstdint>
 #include <string>
 
 #include "user.pb.h"
@@ -36,6 +37,32 @@ public:
         response->set_success(login_result);
 
         //执行回调
+        done->Run();
+
+    }
+
+    bool Register(uint32_t id , std::string& name, std::string& pwd){
+        std::cout << id << std::endl;
+        std::cout << name << std::endl;
+        std::cout << name << std::endl;
+        return true;
+    }
+
+    void Register(::google::protobuf::RpcController* controller,
+                       const ::fixbug::REgisterRequst* request,
+                       ::fixbug::REgisterResponse* response,
+                       ::google::protobuf::Closure* done){
+        uint32_t id = request->id();
+        auto name = request->name();
+        auto pwd = request->pwd();
+
+        bool register_result = Register(id,name,pwd);
+
+        fixbug::ResultCode* code = response->mutable_result();
+        code->set_errcode(0);
+        code->set_errmsg("");
+        response->set_success(register_result);
+
         done->Run();
 
     }

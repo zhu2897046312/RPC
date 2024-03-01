@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/src",
+  "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/example -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -g -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/mprpccontroller.cc",
+  "file": "/home/zhuyi/桌面/WorkSpace/RPC/src/mprpccontroller.cc"
+},
+{
+  "directory": "/home/zhuyi/桌面/WorkSpace/RPC/build/src",
   "command": "/usr/bin/g++  -I/home/zhuyi/桌面/WorkSpace/RPC/example -I/home/zhuyi/桌面/WorkSpace/RPC/src/include -g -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/zhuyi/桌面/WorkSpace/RPC/src/rpcheader.pb.cc",
   "file": "/home/zhuyi/桌面/WorkSpace/RPC/src/rpcheader.pb.cc"
 },

@@ -350,7 +350,7 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.cc \
 
 example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/userservice.cc \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/11/string \
+  /usr/include/c++/11/cstdint \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -363,6 +363,16 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/char_traits.h \
@@ -386,12 +396,10 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -399,14 +407,6 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/11/cstdint \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
@@ -694,6 +694,8 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
   /usr/include/google/protobuf/service.h \
   ../src/include/mprpcapplication.h \
   ../src/include/mprpcconfig.h \
+  ../src/include/mprpcchannel.h \
+  ../src/include/mprpccontroller.h \
   ../src/include/rpcprovider.h \
   /usr/local/include/muduo/net/Callbacks.h \
   /usr/local/include/muduo/base/Timestamp.h \
@@ -854,8 +856,6 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
 
 /usr/include/c++/11/version:
 
-/usr/include/boost/config/compiler/gcc.hpp:
-
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
 /usr/include/boost/operators.hpp:
@@ -869,6 +869,12 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
 ../src/include/rpcprovider.h:
+
+../src/include/mprpccontroller.h:
+
+/usr/include/boost/config/compiler/gcc.hpp:
+
+../src/include/mprpcchannel.h:
 
 ../example/callee/userservice.cc:
 
