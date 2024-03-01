@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.0)
-project(mprpc)
+project(Mprpc)
 
 set(CMAKE_BUILD_TYPE "DEBUG")
 
@@ -8,8 +8,8 @@ set(CMAKE_BUILD_TYPE "DEBUG")
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 # 设置编译头文件搜索路径
-include_directories(${PROJECT_SOURCE_DIR}/src/include)
 include_directories(${PROJECT_SOURCE_DIR}/example)
+include_directories(${PROJECT_SOURCE_DIR}/src/include)
 
 # 设置库文件输出路径
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

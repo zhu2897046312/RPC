@@ -9,7 +9,9 @@ class UserService : public fixbug::UserServiceRpc   //rpc服务提供者
 {
 public:
     bool Login(std::string& name,std::string& pwd){
-        return false;
+        std::cout << name << std::endl;
+        std::cout << name << std::endl;
+        return true;
     }
     /**
     * 1. caller -==> Login(LoginRequest) ==> muduo ==> callee

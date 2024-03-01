@@ -287,17 +287,11 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcapplication.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcconfig.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/rpcprovider.h \
- /usr/local/include/muduo/net/TcpServer.h \
- /usr/local/include/muduo/base/Atomic.h \
- /usr/local/include/muduo/base/noncopyable.h \
- /usr/local/include/muduo/base/Types.h \
- /usr/local/include/muduo/net/TcpConnection.h \
- /usr/local/include/muduo/base/StringPiece.h \
  /usr/local/include/muduo/net/Callbacks.h \
  /usr/local/include/muduo/base/Timestamp.h \
  /usr/local/include/muduo/base/copyable.h \
- /usr/include/boost/operators.hpp /usr/include/boost/config.hpp \
- /usr/include/boost/config/user.hpp \
+ /usr/local/include/muduo/base/Types.h /usr/include/boost/operators.hpp \
+ /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
  /usr/include/boost/config/detail/select_stdlib_config.hpp \
@@ -311,6 +305,11 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: \
  /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp \
  /usr/include/boost/core/addressof.hpp \
+ /usr/local/include/muduo/net/TcpServer.h \
+ /usr/local/include/muduo/base/Atomic.h \
+ /usr/local/include/muduo/base/noncopyable.h \
+ /usr/local/include/muduo/net/TcpConnection.h \
+ /usr/local/include/muduo/base/StringPiece.h \
  /usr/local/include/muduo/net/Buffer.h \
  /usr/local/include/muduo/net/Endian.h \
  /usr/local/include/muduo/net/InetAddress.h /usr/include/netinet/in.h \

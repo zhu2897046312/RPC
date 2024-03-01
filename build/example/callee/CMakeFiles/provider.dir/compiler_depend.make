@@ -695,15 +695,10 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
   ../src/include/mprpcapplication.h \
   ../src/include/mprpcconfig.h \
   ../src/include/rpcprovider.h \
-  /usr/local/include/muduo/net/TcpServer.h \
-  /usr/local/include/muduo/base/Atomic.h \
-  /usr/local/include/muduo/base/noncopyable.h \
-  /usr/local/include/muduo/base/Types.h \
-  /usr/local/include/muduo/net/TcpConnection.h \
-  /usr/local/include/muduo/base/StringPiece.h \
   /usr/local/include/muduo/net/Callbacks.h \
   /usr/local/include/muduo/base/Timestamp.h \
   /usr/local/include/muduo/base/copyable.h \
+  /usr/local/include/muduo/base/Types.h \
   /usr/include/boost/operators.hpp \
   /usr/include/boost/config.hpp \
   /usr/include/boost/config/user.hpp \
@@ -720,6 +715,11 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
   /usr/include/boost/detail/workaround.hpp \
   /usr/include/boost/config/workaround.hpp \
   /usr/include/boost/core/addressof.hpp \
+  /usr/local/include/muduo/net/TcpServer.h \
+  /usr/local/include/muduo/base/Atomic.h \
+  /usr/local/include/muduo/base/noncopyable.h \
+  /usr/local/include/muduo/net/TcpConnection.h \
+  /usr/local/include/muduo/base/StringPiece.h \
   /usr/local/include/muduo/net/Buffer.h \
   /usr/local/include/muduo/net/Endian.h \
   /usr/local/include/muduo/net/InetAddress.h \
@@ -838,6 +838,12 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
 
 /usr/include/netinet/in.h:
 
+/usr/local/include/muduo/base/StringPiece.h:
+
+/usr/local/include/muduo/base/noncopyable.h:
+
+/usr/local/include/muduo/net/TcpServer.h:
+
 /usr/include/boost/core/addressof.hpp:
 
 /usr/include/boost/detail/workaround.hpp:
@@ -854,17 +860,11 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: ../example/callee/users
 
 /usr/include/boost/operators.hpp:
 
+/usr/local/include/muduo/base/Types.h:
+
 /usr/local/include/muduo/base/copyable.h:
 
 /usr/local/include/muduo/base/Timestamp.h:
-
-/usr/local/include/muduo/base/StringPiece.h:
-
-/usr/local/include/muduo/base/Types.h:
-
-/usr/local/include/muduo/base/noncopyable.h:
-
-/usr/local/include/muduo/net/TcpServer.h:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
