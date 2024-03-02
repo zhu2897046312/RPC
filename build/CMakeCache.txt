@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/g++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -54,7 +54,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/gcc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -219,7 +219,7 @@ Mprpc_IS_TOP_LEVEL:STATIC=ON
 Mprpc_SOURCE_DIR:STATIC=/home/zhuyi/桌面/WorkSpace/RPC
 
 //Dependencies for the target
-mprpc_LIB_DEPENDS:STATIC=general;muduo_net;general;muduo_base;general;pthread;
+mprpc_LIB_DEPENDS:STATIC=general;muduo_net;general;muduo_base;general;pthread;general;zookeeper_mt;
 
 
 ########################

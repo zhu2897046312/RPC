@@ -4,3 +4,174 @@ fisrst log message
 11:12:36 ==> /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
 11:17:30 ==> fisrst log message
 11:17:30 ==> /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+19:10:8 ==> [error] fisrst log message
+19:10:8 ==> [info] /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+19:10:8 ==> [info] service_name: UserServiceRpc
+19:10:8 ==> [info] method_name: Login
+19:10:8 ==> [info] method_name: Register
+19:10:8 ==> [info] zookeeper_init success!
+19:10:8 ==> [info] znode create success... path: /UserServiceRpc
+19:10:8 ==> [info] znode create success... path: /UserServiceRpc/Register
+19:10:8 ==> [info] znode create success... path: /UserServiceRpc/Login
+19:10:8 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+19:20:35 ==> [error] fisrst log message
+19:20:35 ==> [info] /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+19:20:35 ==> [info] service_name: UserServiceRpc
+19:20:35 ==> [info] method_name: Login
+19:20:35 ==> [info] method_name: Register
+19:20:35 ==> [info] zookeeper_init success!
+19:20:35 ==> [info] znode create success... path: /UserServiceRpc/Register
+19:20:35 ==> [info] znode create success... path: /UserServiceRpc/Login
+19:20:35 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+19:21:4 ==> [error] fisrst log message
+19:21:4 ==> [error] /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+19:21:4 ==> [info] service_name: UserServiceRpc
+19:21:4 ==> [info] method_name: Login
+19:21:4 ==> [info] method_name: Register
+19:21:4 ==> [info] zookeeper_init success!
+19:21:4 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+19:21:15 ==> [info] zookeeper_init success!
+19:21:15 ==> [info] get znode error... path: /UserServiceRpc/Login
+19:21:15 ==> [info] zookeeper_init success!
+19:21:15 ==> [info] get znode error... path: /UserServiceRpc/Register
+19:35:21 ==> [info] fisrst log message
+19:35:21 ==> [info] /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+19:35:21 ==> [info] service_name: UserServiceRpc
+19:35:21 ==> [info] method_name: Login
+19:35:21 ==> [info] method_name: Register
+19:35:21 ==> [info] zookeeper_init success!
+19:35:21 ==> [info] znode create success... path: /UserServiceRpc/Register
+19:35:21 ==> [info] znode create success... path: /UserServiceRpc/Login
+19:35:21 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+19:36:35 ==> [info] zookeeper_init success!
+19:36:35 ==> [info] zookeeper_init success!
+19:51:22 ==> [info] service_name: UserServiceRpc
+19:51:22 ==> [info] method_name: Login
+19:51:22 ==> [info] method_name: Register
+19:51:22 ==> [info] zookeeper_init success!
+19:51:22 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+19:51:43 ==> [info] zookeeper_init success!
+19:51:43 ==> [info] zookeeper_init success!
+19:54:22 ==> [info] zookeeper_init success!
+19:54:22 ==> [info] get znode error... path: /UserServiceRpc/Login
+19:54:22 ==> [info] zookeeper_init success!
+19:54:22 ==> [info] get znode error... path: /UserServiceRpc/Register
+19:57:2 ==> [info] service_name: UserServiceRpc
+19:57:2 ==> [info] method_name: Login
+19:57:2 ==> [info] method_name: Register
+19:57:2 ==> [info] zookeeper_init success!
+19:57:2 ==> [info] znode create success... path: /UserServiceRpc/Register
+19:57:2 ==> [info] znode create success... path: /UserServiceRpc/Login
+19:57:2 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+19:59:30 ==> [info] service_name: UserServiceRpc
+19:59:30 ==> [info] method_name: Login
+19:59:30 ==> [info] method_name: Register
+19:59:30 ==> [info] zookeeper_init success!
+19:59:30 ==> [info] get znode error... path: 127.0.0.1:8000
+19:59:30 ==> [info] get znode error... path: 127.0.0.1:8000
+19:59:30 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+20:6:49 ==> [info] service_name: UserServiceRpc
+20:6:49 ==> [info] method_name: Login
+20:6:49 ==> [info] method_name: Register
+20:6:49 ==> [info] zookeeper_init success!
+20:22:3 ==> [info] service_name: UserServiceRpc
+20:22:3 ==> [info] method_name: Login
+20:22:3 ==> [info] method_name: Register
+20:22:3 ==> [info] zookeeper_init success!
+20:22:3 ==> [info] znode create success... path: /UserServiceRpc/Register
+20:22:3 ==> [info] get znode error... path: 127.0.0.1:8000
+20:22:3 ==> [info] znode create success... path: /UserServiceRpc/Login
+20:22:3 ==> [info] get znode error... path: 127.0.0.1:8000
+20:22:3 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+20:22:9 ==> [info] zookeeper_init success!
+20:22:9 ==> [info] zookeeper_init success!
+20:38:21 ==> [info] service_name: UserServiceRpc
+20:38:21 ==> [info] method_name: Login
+20:38:21 ==> [info] method_name: Register
+20:38:21 ==> [info] zookeeper_init success!
+20:38:21 ==> [info] get znode error... path: 127.0.0.1:8000
+20:38:21 ==> [info] get znode error... path: 127.0.0.1:8000
+20:38:21 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+20:38:30 ==> [info] zookeeper_init success!
+20:38:30 ==> [info] zookeeper_init success!
+20:42:9 ==> [info] service_name: UserServiceRpc
+20:42:9 ==> [info] method_name: Login
+20:42:9 ==> [info] method_name: Register
+20:46:54 ==> [info] service_name: UserServiceRpc
+20:46:54 ==> [info] method_name: Login
+20:46:54 ==> [info] method_name: Register
+20:50:46 ==> [info] service_name: UserServiceRpc
+20:50:46 ==> [info] method_name: Login
+20:50:46 ==> [info] method_name: Register
+20:50:46 ==> [info] zookeeper_init success!
+20:50:46 ==> [info] znode create success... path: /UserServiceRpc/Register
+20:50:47 ==> [info] get znode error... path: 127.0.0.1:8000
+20:50:47 ==> [info] znode create success... path: /UserServiceRpc/Login
+20:50:47 ==> [info] get znode error... path: 127.0.0.1:8000
+20:50:47 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+20:50:58 ==> [info] zookeeper_init success!
+20:50:58 ==> [info] zookeeper_init success!
+20:53:7 ==> [info] zookeeper_init success!
+20:53:7 ==> [info] zookeeper_init success!
+20:55:1 ==> [info] zookeeper_init success!
+20:57:52 ==> [info] zookeeper_init success!
+20:58:44 ==> [info] zookeeper_init success!
+20:58:44 ==> [info] zookeeper_init success!
+21:1:55 ==> [info] zookeeper_init success!
+21:1:55 ==> [info] zookeeper_init success!
+21:3:26 ==> [info] zookeeper_init success!
+21:8:18 ==> [info] zookeeper_init success!
+21:8:18 ==> [info] zookeeper_init success!
+21:9:1 ==> [info] zookeeper_init success!
+21:9:1 ==> [info] zookeeper_init success!
+21:18:25 ==> [info] service_name: UserServiceRpc
+21:18:25 ==> [info] method_name: Login
+21:18:25 ==> [info] method_name: Register
+21:18:25 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+21:26:6 ==> [info] service_name: UserServiceRpc
+21:26:6 ==> [info] method_name: Login
+21:26:6 ==> [info] method_name: Register
+21:26:6 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+21:29:59 ==> [info] service_name: UserServiceRpc
+21:29:59 ==> [info] method_name: Login
+21:29:59 ==> [info] method_name: Register
+21:29:59 ==> [info] zookeeper_init success!
+21:29:59 ==> [info] znode create success... path: /UserServiceRpc/Register
+21:29:59 ==> [info] get znode error... path: 127.0.0.1:8000
+21:29:59 ==> [info] znode create success... path: /UserServiceRpc/Login
+21:29:59 ==> [info] get znode error... path: 127.0.0.1:8000
+21:29:59 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+21:30:4 ==> [info] zookeeper_init success!
+21:30:4 ==> [info] zookeeper_init success!
+21:51:34 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+22:1:16 ==> [info] service_name:UserServiceRpc
+22:1:16 ==> [info] method_name:Login
+22:1:16 ==> [info] method_name:Register
+22:1:16 ==> [info] zookeeper_init success!
+22:1:16 ==> [info] znode create success... path: /UserServiceRpc/Register
+22:1:16 ==> [info] znode create success... path: /UserServiceRpc/Login
+22:14:6 ==> [info] RpcProvider start service at ip: 127.0.0.1 port: 8000
+22:18:3 ==> [info] service_name:UserServiceRpc
+22:18:3 ==> [info] method_name:Login
+22:18:3 ==> [info] method_name:Register
+22:18:3 ==> [info] zookeeper_init success!
+22:18:3 ==> [info] znode create success... path: /UserServiceRpc/Register
+22:18:3 ==> [info] znode create success... path: /UserServiceRpc/Login
+22:18:6 ==> [info] zookeeper_init success!
+22:18:6 ==> [info] zookeeper_init success!
+22:48:20 ==> [info] service_name:UserServiceRpc
+22:48:20 ==> [info] method_name:Login
+22:48:20 ==> [info] method_name:Register
+22:48:20 ==> [info] zookeeper_init success!
+22:48:20 ==> [info] znode create success... path: /UserServiceRpc/Register
+22:48:20 ==> [info] znode create success... path: /UserServiceRpc/Login
+22:48:30 ==> [info] zookeeper_init success!
+22:48:30 ==> [info] zookeeper_init success!
+22:49:18 ==> [info] service_name:UserServiceRpc
+22:49:18 ==> [info] method_name:Login
+22:49:18 ==> [info] method_name:Register
+22:49:18 ==> [info] zookeeper_init success!
+22:49:24 ==> [info] zookeeper_init success!
+22:49:24 ==> [info] zookeeper_init success!
+22:49:38 ==> [info] zookeeper_init success!
+22:49:38 ==> [info] zookeeper_init success!

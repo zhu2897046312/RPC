@@ -39,7 +39,11 @@ Logger::Logger(){
 
             std::string msg = m_lockQueue.Pop();
             char time_buf[128] = {0};
-            sprintf(time_buf, "%d:%d:%d ==> ", nowtm->tm_hour, nowtm->tm_min, nowtm->tm_sec);
+            sprintf(time_buf, "%d:%d:%d ==> [%s] ", 
+                        nowtm->tm_hour, 
+                        nowtm->tm_min, 
+                        nowtm->tm_sec,
+                        (m_logLevel == INFO ? "info" : "error"));
             msg.insert(0,time_buf);
             msg.append("\n");
             if(-1 == write(fd, msg.c_str(), msg.size())){

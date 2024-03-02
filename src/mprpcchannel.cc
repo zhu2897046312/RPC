@@ -11,6 +11,8 @@
 #include <unistd.h>
 
 #include "mprpcapplication.h"
+#include "logger.h"
+#include "zookeeperutil.h"
 namespace fst
 {
 /**
@@ -42,7 +44,8 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
 
     std::string rpc_header_str;
     uint32_t header_size;
-    if(rpcHeader.SerializePartialToString(&rpc_header_str)){
+	//不同  SerializePartialToString(  SerializeToString(
+    if(rpcHeader.SerializeToString(&rpc_header_str)){
         header_size = rpc_header_str.size();
     }else{
         //std::cout << "serialize rpc_header_str error!" << std::endl;
@@ -64,12 +67,34 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     std::cout << "args_str: " << args_str << std::endl;
     std::cout << "==============================" << std::endl;
 
-    std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
-    uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    // std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+    // uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    std::string ip;
+    uint16_t port = 0;
+    {
+    ZkClient zk_client;
+    zk_client.Start();
+    std::string method_path = "/" + service_name + "/" + method_name;
+    std::string host_data = zk_client.GetDate(method_path.c_str());
+    std::cout << method_path << "---------" << host_data << std::endl;
+    if(host_data == ""){
+        controller->SetFailed(method_path + " is not exist! ");
+        return;
+    }
+    int idx = host_data.find(":");
+    if(-1 == idx){
+        controller->SetFailed(method_path + " address is valid!");
+        return;
+    }
+    ip = host_data.substr(0,idx);
+    port = atoi(host_data.substr(idx + 1, host_data.size() - idx).c_str());
+    }
 
+    std::cout << "ip:" << ip << port << std::endl;
     int client_fd = socket(AF_INET, SOCK_STREAM, 0);
     if(-1 == client_fd){
         std::cout << "create socket error ! errno: " << errno << std::endl;
+        // LOG_ERROR("create socket error ! errno: %s", std::to_string(errno).c_str());
         controller->SetFailed("create socket error ! errno: " + std::to_string(errno));
         return;
     }
@@ -83,6 +108,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         //std::cout << "connect error! errno: " << errno << std::endl;
         close(client_fd);
         controller->SetFailed("connect error! errno: " + std::to_string(errno));
+        return;
     }
     //发送请求
     if(-1 == send(client_fd,send_rpc_str.c_str(), send_rpc_str.size(),0)){
@@ -109,9 +135,8 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         close(client_fd);
         return;
     }
-    
-
-
+    std::cout <<" mprpcchannel" <<response_str << std::endl;
+    close(client_fd);
 }
 
 }
