@@ -1,0 +1,6 @@
+fisrst log message
+/home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+11:12:36 ==> fisrst log message
+11:12:36 ==> /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75
+11:17:30 ==> fisrst log message
+11:17:30 ==> /home/zhuyi/桌面/WorkSpace/RPC/example/callee/userservice.cc:main:75

@@ -5,6 +5,7 @@
 #include "user.pb.h"
 #include "mprpcapplication.h"
 #include "rpcprovider.h"
+#include "logger.h"
 
 class UserService : public fixbug::UserServiceRpc   //rpc服务提供者
 {
@@ -69,6 +70,9 @@ public:
 };
 
 int main(int argc,char **argv){
+
+    LOG_INFO("fisrst log message");
+    LOG_ERROR("%s:%s:%d",__FILE__,__FUNCTION__,__LINE__);
 
     // 框架初始化操作
     fst::MprpcApplication::Init(argc,argv);
