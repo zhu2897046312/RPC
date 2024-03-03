@@ -250,6 +250,30 @@ mprpccontroller.cc.s:
 	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.s
 .PHONY : mprpccontroller.cc.s
 
+mprpcprovider.o: mprpcprovider.cc.o
+.PHONY : mprpcprovider.o
+
+# target to build an object file
+mprpcprovider.cc.o:
+	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cc.o
+.PHONY : mprpcprovider.cc.o
+
+mprpcprovider.i: mprpcprovider.cc.i
+.PHONY : mprpcprovider.i
+
+# target to preprocess a source file
+mprpcprovider.cc.i:
+	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cc.i
+.PHONY : mprpcprovider.cc.i
+
+mprpcprovider.s: mprpcprovider.cc.s
+.PHONY : mprpcprovider.s
+
+# target to generate assembly for a file
+mprpcprovider.cc.s:
+	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cc.s
+.PHONY : mprpcprovider.cc.s
+
 rpcheader.pb.o: rpcheader.pb.cc.o
 .PHONY : rpcheader.pb.o
 
@@ -273,30 +297,6 @@ rpcheader.pb.s: rpcheader.pb.cc.s
 rpcheader.pb.cc.s:
 	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.s
 .PHONY : rpcheader.pb.cc.s
-
-rpcprovider.o: rpcprovider.cc.o
-.PHONY : rpcprovider.o
-
-# target to build an object file
-rpcprovider.cc.o:
-	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
-.PHONY : rpcprovider.cc.o
-
-rpcprovider.i: rpcprovider.cc.i
-.PHONY : rpcprovider.i
-
-# target to preprocess a source file
-rpcprovider.cc.i:
-	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.i
-.PHONY : rpcprovider.cc.i
-
-rpcprovider.s: rpcprovider.cc.s
-.PHONY : rpcprovider.s
-
-# target to generate assembly for a file
-rpcprovider.cc.s:
-	cd /home/zhuyi/桌面/WorkSpace/RPC/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.s
-.PHONY : rpcprovider.cc.s
 
 zookeeperutil.o: zookeeperutil.cc.o
 .PHONY : zookeeperutil.o
@@ -346,12 +346,12 @@ help:
 	@echo "... mprpccontroller.o"
 	@echo "... mprpccontroller.i"
 	@echo "... mprpccontroller.s"
+	@echo "... mprpcprovider.o"
+	@echo "... mprpcprovider.i"
+	@echo "... mprpcprovider.s"
 	@echo "... rpcheader.pb.o"
 	@echo "... rpcheader.pb.i"
 	@echo "... rpcheader.pb.s"
-	@echo "... rpcprovider.o"
-	@echo "... rpcprovider.i"
-	@echo "... rpcprovider.s"
 	@echo "... zookeeperutil.o"
 	@echo "... zookeeperutil.i"
 	@echo "... zookeeperutil.s"

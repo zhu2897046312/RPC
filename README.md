@@ -1,19 +1,40 @@
 # RPC
 
-#### 依赖库
+# 依赖库
 ```
 1. protobuf
-
+2. zookeeper_mt
+3. muduo
 ```
 
-#### BUG
+# BUG
 ```
-1.在zookeeperutil.cc的Start()中使用Logger会导致客户端在接收到响应后仍然不退出
+在zookeeperutil.cc的Start()中使用Logger会导致客户端在接收到响应后仍然不退出
 ```
 
-#### 配置
+## 项目任务
 ```
-1. key=value   --- key 与 value 中不能有空格
+任务一: 实现mprpc应用框架初始化
+        到src/include/mprpcapplication.h src/include/mprpcconfig.h 实现相应方法
+
+任务二: 实现RPC服务发布      --- RPCServer
+        到 src/include/mprpcprovider.h 实现相应方法
+
+任务三: 实现RPC服务Client
+        到 src/include/mprpcchannel.h src/include/mprpccontroller.h实现相应方法
+
+任务四: 实现RPC框架日志系统
+        到 src/include/logger.h src/include/lockqueue.h 实现相应方法
+
+任务五: 实现zookeeper注册中心
+        到 src/include/zookeeperutil.h 实现相应方法
+```
+
+## 项目所需技术
+```
+1. muduo网络库
+2. zookeeper分布式协调服务
+3. protobuf格式库
 ```
 
 ### example 

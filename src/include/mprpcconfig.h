@@ -11,7 +11,14 @@ namespace fst
 class MprcpConfig
 {
 public:
-    //加载配置文件
+    /**
+    * 1.打开配置文件
+    * 2.读取配置文件    -- 解析配置项
+    *   (1) "#" 注释u
+    *   (2) 截取字符串 格式:[key=value]
+    *   (3) 读入内存中
+    * 3.关闭文件
+    */
     void LoadConfigFile(const char* config_file);
 
     //查询配置项信息

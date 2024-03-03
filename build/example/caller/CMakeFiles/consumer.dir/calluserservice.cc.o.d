@@ -280,7 +280,7 @@ example/caller/CMakeFiles/consumer.dir/calluserservice.cc.o: \
  /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
  /usr/include/google/protobuf/stubs/stl_util.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpccontroller.h \
- /home/zhuyi/桌面/WorkSpace/RPC/src/include/rpcprovider.h \
+ /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcprovider.h \
  /usr/local/include/muduo/net/Callbacks.h \
  /usr/local/include/muduo/base/Timestamp.h \
  /usr/local/include/muduo/base/copyable.h \

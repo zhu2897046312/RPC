@@ -4,7 +4,7 @@
 
 #include "user.pb.h"
 #include "mprpcapplication.h"
-#include "rpcprovider.h"
+#include "mprpcprovider.h"
 #include "logger.h"
 
 class UserService : public fixbug::UserServiceRpc   //rpc服务提供者
@@ -75,7 +75,7 @@ int main(int argc,char **argv){
     fst::MprpcApplication::Init(argc,argv);
 
     //把Userervice对象发布到rpc节点上
-    fst::RpcProvider provider;
+    fst::MprpcProvider provider;
     provider.NotifyService(new UserService());
 
     //启动一个rpc服务发布节点

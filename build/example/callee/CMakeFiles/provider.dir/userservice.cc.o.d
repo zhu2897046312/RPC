@@ -286,7 +286,7 @@ example/callee/CMakeFiles/provider.dir/userservice.cc.o: \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcconfig.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcchannel.h \
  /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpccontroller.h \
- /home/zhuyi/桌面/WorkSpace/RPC/src/include/rpcprovider.h \
+ /home/zhuyi/桌面/WorkSpace/RPC/src/include/mprpcprovider.h \
  /usr/local/include/muduo/net/Callbacks.h \
  /usr/local/include/muduo/base/Timestamp.h \
  /usr/local/include/muduo/base/copyable.h \
