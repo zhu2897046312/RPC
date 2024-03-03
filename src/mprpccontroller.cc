@@ -2,25 +2,25 @@
 
 namespace fst {
 
-MprpcConTroller::MprpcConTroller(){
+MprpcController::MprpcController(){
     m_failed = false;
     m_errText = "";
 }
 
-void MprpcConTroller::Reset(){
+void MprpcController::Reset(){
     m_failed = false;
     m_errText = "";
 }
 
-bool MprpcConTroller::Failed() const{
+bool MprpcController::Failed() const{
    return m_failed;
 }
 
-std::string MprpcConTroller::ErrorText() const{
+std::string MprpcController::ErrorText() const{
     return m_errText;
 }
 
-void MprpcConTroller::SetFailed(const std::string& reason){
+void MprpcController::SetFailed(const std::string& reason){
     m_failed = true;
     m_errText = reason;
 } 

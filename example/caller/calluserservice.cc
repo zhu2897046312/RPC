@@ -14,7 +14,7 @@ int main(int argc,char **argv){
     request.set_pwd("1234");
 
     fixbug::LoginResponse response;
-    fst::MprpcConTroller controller;
+    fst::MprpcController controller;
     stub.Login(&controller,&request,&response,nullptr);
 
     if(controller.Failed()){

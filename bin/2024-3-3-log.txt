@@ -1,0 +1,68 @@
+0:1:27 ==> [info] ddddd
+0:1:27 ==> [info] ddddd
+0:1:27 ==> [info] service_name: FiendServiceRpc
+0:1:27 ==> [info] method_name: GetFriendsList
+0:1:27 ==> [info] zookeeper_init success!
+0:1:27 ==> [info] znode create success... path: /FiendServiceRpc/GetFriendsList
+0:1:46 ==> [info] zookeeper_init success!
+0:10:34 =>[info] ddddd
+0:10:34 =>[info] ddddd
+0:10:34 =>[info] service_name:FiendServiceRpc
+0:10:34 =>[info] method_name:GetFriendsList
+0:11:33 =>[info] service_name:UserServiceRpc
+0:11:33 =>[info] method_name:Login
+0:11:33 =>[info] method_name:Register
+8:58:56 ==> [info] service_name: UserServiceRpc
+8:58:56 ==> [info] method_name: Login
+8:58:56 ==> [info] method_name: Register
+9:0:42 ==> [info] service_name: UserServiceRpc
+9:0:42 ==> [info] method_name: Login
+9:0:42 ==> [info] method_name: Register
+9:1:25 ==> [info] service_name: UserServiceRpc
+9:1:25 ==> [info] method_name: Login
+9:1:25 ==> [info] method_name: Register
+9:2:17 ==> [info] service_name: UserServiceRpc
+9:2:17 ==> [info] method_name: Login
+9:2:17 ==> [info] method_name: Register
+9:6:22 ==> [info] service_name: UserServiceRpc
+9:6:22 ==> [info] method_name: Login
+9:6:22 ==> [info] method_name: Register
+9:6:36 ==> [info] service_name: UserServiceRpc
+9:6:36 ==> [info] method_name: Login
+9:6:36 ==> [info] method_name: Register
+9:7:39 ==> [info] service_name: UserServiceRpc
+9:7:39 ==> [info] method_name: Login
+9:7:39 ==> [info] method_name: Register
+9:9:20 ==> [info] service_name: UserServiceRpc
+9:9:20 ==> [info] method_name: Login
+9:9:20 ==> [info] method_name: Register
+9:25:10 ==> [info] service_name: UserServiceRpc
+9:25:10 ==> [info] method_name: Login
+9:25:10 ==> [info] method_name: Register
+9:25:10 ==> [error] get znode error... path:
+9:25:10 ==> [error] get znode error... path:
+9:25:10 ==> [error] get znode error... path:
+9:25:15 ==> [error] get znode error... path:
+9:25:15 ==> [error] get znode error... path:
+9:37:30 ==> [info] service_name: UserServiceRpc
+9:37:30 ==> [info] method_name: Login
+9:37:30 ==> [info] method_name: Register
+9:37:30 ==> [info] znode create success... path: /UserServiceRpc/Register
+9:37:30 ==> [info] znode create success... path: /UserServiceRpc/Login
+9:38:13 ==> [info] service_name: UserServiceRpc
+9:38:13 ==> [info] method_name: Login
+9:38:13 ==> [info] method_name: Register
+9:38:13 ==> [info] zookeeper_init success!
+9:38:13 ==> [info] znode create success... path: /UserServiceRpc/Register
+9:38:13 ==> [info] znode create success... path: /UserServiceRpc/Login
+9:38:15 ==> [info] zookeeper_init success!
+9:38:15 ==> [info] zookeeper_init success!
+9:40:39 ==> [info] service_name: UserServiceRpc
+9:40:39 ==> [info] method_name: Login
+9:40:39 ==> [info] method_name: Register
+9:40:39 ==> [info] zookeeper_init success!
+9:40:40 ==> [info] zookeeper_init success!
+9:40:40 ==> [info] zookeeper_init success!
+9:41:36 ==> [info] service_name: UserServiceRpc
+9:41:36 ==> [info] method_name: Login
+9:41:36 ==> [info] method_name: Register

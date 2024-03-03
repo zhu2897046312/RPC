@@ -7,7 +7,7 @@
 #include <zookeeper/zookeeper.h>
 
 #include "mprpcapplication.h"
-#include "logger.h"
+
 namespace fst {
 
 //全局watcher观察器  zkserver给zkclient的通知
@@ -34,7 +34,6 @@ void ZkClient::Start(){
     std::string host = MprpcApplication::GetInstance().GetConfig().Load("zookeeperip");
     std::string port = MprpcApplication::GetInstance().GetConfig().Load("zookeeperport");
     std::string connstr = host + ":" + port;
-    std::cout << __FILE__ << __FUNCTION__ << connstr << std::endl;
 
     /**
     多线程版本
@@ -42,11 +41,14 @@ void ZkClient::Start(){
     API调用线程
     网络I/O线程
     watcher回调线程
+
+    这里不能使用自己写的log     ----- 大BUG
     */
     m_zhandle = zookeeper_init(connstr.c_str(), global_watcher,
              30000, nullptr, nullptr, 0);
     if (nullptr == m_zhandle) {
-        LOG_ERROR("zookeeper_init error!");
+        std::cout << "zookeeper_init error!" << std::endl;
+        //LOG_ERROR("zookeeper_init error!");       
         exit(EXIT_FAILURE);
     }
 
@@ -55,7 +57,8 @@ void ZkClient::Start(){
     zoo_set_context(m_zhandle, &sem);
     sem_wait(&sem);         //阻塞等待响应
 
-    LOG_INFO("zookeeper_init success!");
+    std::cout << "zookeeper_init success!" << std::endl;
+    //LOG_INFO("zookeeper_init success!");
 }
 
 void ZkClient::Create(const char* path,const char* data,int datalen,int state){
@@ -68,10 +71,13 @@ void ZkClient::Create(const char* path,const char* data,int datalen,int state){
         flag = zoo_create(m_zhandle, path, data, datalen, 
         &ZOO_OPEN_ACL_UNSAFE, state, path_buffer, buffer_length);
         if(ZOK == flag){
-            LOG_INFO("znode create success... path: %s" ,path);
+            std::cout << "znode create success... path:" << path << std::endl;
+            //LOG_INFO("znode create success... path: %s" ,path);
         }else {
-            LOG_INFO("flage: %d" ,flag);
-            LOG_INFO("znode create error... path: %s" ,path);
+            std::cout << "flag:" << flag << std::endl;
+			std::cout << "znode create error... path:" << path << std::endl;
+            //LOG_INFO("flage: %d" ,flag);
+            //LOG_INFO("znode create error... path: %s" ,path);
             exit(EXIT_FAILURE);
         }
     }
@@ -82,7 +88,8 @@ std::string ZkClient::GetDate(const char*path){
     int buffer_length = sizeof(buffer);
     int flag = zoo_get(m_zhandle, path, 0, buffer, &buffer_length, nullptr);
     if(flag != ZOK){
-        LOG_INFO("get znode error... path: %s", path);
+        std::cout << "get znode error... path:" << path << std::endl;
+        //LOG_INFO("get znode error... path: %s", path);
         return "";
     }
     return std::string(buffer);

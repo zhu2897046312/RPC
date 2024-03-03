@@ -28,7 +28,8 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     //获取参数的序列化字符串长度 args_size
     uint32_t args_size = 0;
     std::string args_str;
-    if(request->SerializePartialToString(&args_str)){
+	//【不同】SerializePartialToString --- SerializeToString
+    if(request->SerializeToString(&args_str)){
         args_size = args_str.size();
     }else{
         //std::cout << "serialize request error!" << std::endl;
@@ -127,15 +128,17 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         return;
     }
 
-    //反序列化response
-    std::string response_str(recv_buf,recv_size);
-    if(!response->ParseFromString(response_str)){
+    //反序列化response  不同
+    //std::string response_str(recv_buf,recv_size);
+    if(!response->ParseFromArray(recv_buf,recv_size)){
         //std::cout << "parse error! response_str: " << response_str << std::endl;
-        controller->SetFailed("parse error! response_str: " + response_str);
         close(client_fd);
+        char errtxt[2048] = {0};
+        snprintf(errtxt, sizeof(errtxt),"parse error! response_str: %s", recv_buf);
+        controller->SetFailed(errtxt);
         return;
     }
-    std::cout <<" mprpcchannel" <<response_str << std::endl;
+    //std::cout <<" mprpcchannel" <<response_str << std::endl;
     close(client_fd);
 }
 
